@@ -21,15 +21,26 @@
     font-size: 20px;
   }
 
+  .muted-branco{
+    color: #ffffff !important;
+  }
+
+  .whatsapp-p{
+    color: #ffffff;
+  }
+
+
   * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
   }
   
-  h1, h4, h5{
+  h1, h4, h5, h3{
     font-family: 'Rubik', sans-serif;
+    text-transform: uppercase !important;
     }
+
     .item{
     padding: 0 45px 40px 20px;
     }
@@ -133,6 +144,9 @@ section{
 .wrap {
   height: 30vh;
 }
+#wpp-logo{
+  width: 200px;
+}
 }
 
 .fa-question-circle:before{
@@ -141,4 +155,127 @@ section{
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-			
+      
+
+.whatsapp-h3{
+  color: #ffffff !important;
+}
+
+
+
+
+/* FAQ */
+
+.containera {
+  margin: 0 auto;
+  padding: 2rem;
+  width: 70rem;
+  
+}
+
+#perguntas{
+  margin: 0;
+  padding: 0;
+  font-family: 'Hind', sans-serif;
+  background: #fff;
+  color: #4d5974;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 100vh;
+}
+
+#perguntas {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+.accordion a {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 100%;
+  padding: 1rem 3rem 1rem 1rem;
+  color: #ffffff !important;
+  font-size: 1.15rem;
+  font-weight: 400;
+  border-bottom: 1px solid #e5e5e5;
+  font-family: 'Rubik', sans-serif;
+  text-transform: uppercase;
+}
+
+.accordion a:hover,
+.accordion a:hover::after {
+  cursor: pointer;
+  color: #b4953f;
+}
+
+/* .accordion a:hover::after {
+  border: 1px solid #ffffff;
+}
+
+.accordion a.active {
+  color: #ffffff;
+  border-bottom: 1px solid #ffffff;
+} */
+
+.accordion a::after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f0dd";  
+  position: absolute;
+  float: right;
+  right: 1rem;
+  font-size: 1rem;
+  color: #ffffff;
+  padding: 5px;
+  width: 30px;
+  height: 30px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.accordion a.active::after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: '\f0de';
+  color: #b4953f;
+}
+
+.accordion .content {
+  opacity: 0;
+  padding: 0 1rem;
+  max-height: 0;
+  border-bottom: 1px solid #e5e5e5;
+  overflow: hidden;
+  clear: both;
+  -webkit-transition: all 0.2s ease 0.15s;
+  -o-transition: all 0.2s ease 0.15s;
+  transition: all 0.2s ease 0.15s;
+}
+
+.accordion .content p {
+  font-size: 1rem;
+  font-weight: 300;
+  color: white;
+}
+
+.accordion .content.active {
+  opacity: 1;
+  padding: 1rem;
+  max-height: 100%;
+  -webkit-transition: all 0.35s ease 0.15s;
+  -o-transition: all 0.35s ease 0.15s;
+  transition: all 0.35s ease 0.15s;
+}

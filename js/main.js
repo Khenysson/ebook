@@ -21,6 +21,16 @@ const parts = {
     // This is where we'd recalculate the time remaining
   }, 1000);
 
+
+// FAQ
+  const items = document.querySelectorAll(".accordion a");
+
+  function toggleAccordion(){
+    this.classList.toggle('active');
+    this.nextElementSibling.classList.toggle('active');
+  }
+  
+  items.forEach(item => item.addEventListener('click', toggleAccordion));
       
      
 
