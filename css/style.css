@@ -132,8 +132,8 @@ body {
 		font-size: 30px !important;
 	}
 	section {
-		padding-top: 50px;
-		padding-bottom: 50px;
+		padding-top: 70px;
+		padding-bottom: 70px;
   }
   #ebook-preco{
     display: none !important;
@@ -194,7 +194,7 @@ body {
 		padding: 16px;
   }
   #ebook-preco{
-    width: 250px;
+    width: 250px !important;
   }
   .preco{
     font-size: 50px !important;
@@ -326,4 +326,8 @@ body {
 	-webkit-transition: all 0.35s ease 0.15s;
 	-o-transition: all 0.35s ease 0.15s;
 	transition: all 0.35s ease 0.15s;
+}
+
+.row{
+	margin: 0px !important;
 }
