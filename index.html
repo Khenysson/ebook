@@ -197,10 +197,31 @@
 				<div class="wrap">
 					<div class="time-to">
 						VOCÊ TEM APENAS
-						<span id="countdown" class="wow flash" data-wow-duration="0.5s" data-wow-delay="0.5s"></span>
+						<div class="w-full flex-w flex-sb-m">
+							<div class="flex-w cd100">
+								<div class="time-to flex-w flex-b m-r-22">
+									<span class="days">75</span>
+									<span class="">D</span>
+								</div>
+								<div class="time-to flex-w flex-b m-r-22">
+									<span class="hours">17</span>
+									<span class="">H</span>
+								</div>
+								<div class="time-to flex-w flex-b m-r-22 ">
+									<span class="minutes">50</span>
+									<span class="">M</span>
+								</div>
+								<div class=" time-to flex-w flex-b m-r-22">
+									<span class="seconds">39</span>
+									<span class="">S</span>
+								</div>
+							</div>
+						</div>
 						PARA APROVEITAR ESTA OFERTA DE LANÇAMENTO
 					</div>
 				</div>
+
+				
 				<br><br>
 				<div class="col-md-12 text-center">
 					<a class="btn btn-lg btn-primary-white goto text-center wow flash" href="#investimento" style="font-family: Barlow Condensed, sans-serif; 
@@ -319,7 +340,7 @@
 						<p><br>
 							<br><br>
 							<a class="btn btn-lg btn-primary-white goto text-center wow flash" href="https://pay.hotmart.com/N23819415W" target="_blank" tyle="font-family: Barlow Condensed, sans-serif; 
-						white-space: normal; margin: 25px auto; color: rgb(255, 255, 255); box-shadow: rgba(0, 0, 0, 0.3) 2px 2px 10px 2px;
+						white-space: normal; margin: 25px auto; color: rgb(255, 255, 255) !important; box-shadow: rgba(0, 0, 0, 0.3) 2px 2px 10px 2px;
 						border-width: 1px; border-radius: 5px; font-size: 20px;  visibility: visible;  background-color: red;
 						animation-duration: 0.5s; animation-delay: 0.5s; animation-name: flash;" data-selector="a.btn, a.download-btn, button.btn, a.goto" 
 						src="https://blob.llimages.com/machine-user-images/10-img-1398669-20190712181144.png" data-wow-duration="0.5s" data-wow-delay="0.5s"  
@@ -517,5 +538,26 @@
 		<script>
 			new WOW().init();
 		</script>
+
+<script src="js/vendor/moment.min.js"></script>
+<script src="js/vendor/moment-timezone.min.js"></script>
+<script src="js/vendor/moment-timezone-with-data.min.js"></script>
+<script src="js/vendor/countdowntime.js"></script>
+	<script>
+		$('.cd100').countdown100({
+			/*Set Endtime here*/
+			/*Endtime must be > current time*/
+			endtimeYear: 0,
+			endtimeMonth: 0,
+			endtimeDate: 6,
+			endtimeHours: 24,
+			endtimeMinutes: 59,
+			endtimeSeconds: 59,
+			timeZone: "" 
+			// ex:  timeZone: "America/New_York"
+			//go to " http://momentjs.com/timezone/ " to get timezone
+		});
+	</script>
+
 	</body>
 </html>

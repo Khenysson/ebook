@@ -1,5 +1,5 @@
 setInterval(() => {
-	const difference = new Date("2020-03-16") - new Date();
+	const difference = new Date("2020-03-25") - new Date();
 	const parts = {
 		D: Math.floor(difference / (1000 * 60 * 60 * 24)),
 		H: Math.floor((difference / (1000 * 60 * 60)) % 24),
